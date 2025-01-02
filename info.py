@@ -53,7 +53,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://mwmovies:mwmovies@cluster0.nyqnnu0.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://acefrom52:luffyiscaptain@cluster0.odztfai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'N2_files')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
