@@ -80,7 +80,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-     if not await db.has_premium_access(message.from_user.id):
+    if not await db.has_premium_access(message.from_user.id):
         channels = (await get_settings(int(message.from_user.id))).get('fsub')
         if channels:  
             btn = await is_multi_subscribed(client, message, channels)
